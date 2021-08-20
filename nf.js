@@ -2,12 +2,8 @@
 
 const os = require('os');
 
-var architecture = os.arch();
-var hname = os.hostname();
-var helper = JSON.stringify(os.networkInterfaces())
-var ip = os.networkInterfaces()['lo'][0]['address']
 
-// now we convert the uptime in seconds to hms format, using timecheck to add leading 
+// convert the uptime in seconds to hms format, using checktime to add leading 
 // zeroes to single digit numbers
 var samp = os.uptime(); // 4003 seconds is the same as
 var hours = Math.floor(samp/3600);
