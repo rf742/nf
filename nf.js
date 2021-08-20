@@ -24,7 +24,7 @@ function display() {
 	var cats = [
 		"type: " + os.type,
 		"kernel: " + os.release(),
-		"host: " + hname, 
+		"host: " + os.hostname(), 
 		"shell: "+ os.userInfo()['shell'],
 		"uptime: " + timestr,
 		"mem: "+ usedMB+ " Mb  / " + totalMB+ " Mb"
